@@ -1,0 +1,30 @@
+{
+	"cred": [
+		["form", {
+			"username": {
+				"type": "string",
+				"gt": 6
+			},
+			"password": {
+				"type": "password",
+				"gt": 6
+			},
+			"cancel": {
+				"type": "button",
+				"action": "<CANCEL>"
+			},
+			"login": {
+				"type": "button",
+				"action": "<NEXT>"
+			}
+		}, "cred"],
+		["crypto.md5", "cred", {"password": "password"}, "cred"],
+		["http.post", "cred", {
+			"url": "https://api-uat.blu.today/1.0/ums/auth/signin",
+			"headers": {
+				"Content-Type": "application/json"
+			}
+		}, "res"],
+		["storage", "res"]
+	]
+}

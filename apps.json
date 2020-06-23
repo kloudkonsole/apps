@@ -1,41 +1,22 @@
 [
 	{
+		"id": "97A980A2-0E85-4BFF-B353-C8E7882798B6",
+		"bgcolor": "#fff",
+		"color": "#000",
+		"icon": "pp.svg",
 		"name": "Parcel Process",
-		"icon": "pp.png",
 		"desc": "Process parcels with ease",
-		"cred": [
-			["form", {
-				"username": {
-					"type": "string",
-					"gt": 6
-				},
-				"password": {
-					"type": "password",
-					"gt": 6
-				},
-				"cancel": {
-					"type": "button",
-					"action": "<CANCEL>"
-				},
-				"login": {
-					"type": "button",
-					"action": "<NEXT>"
-				}
-			}, "cred"],
-			["crypto.md5", "cred", {"password": "password"}, "cred"],
-			["http.post", "cred", {
-				"url": "https://api-uat.blu.today/1.0/ums/auth/signin",
-				"headers": {
-					"Content-Type": "application/json"
-				}
-			}, "res"],
-			["storage", "res"]
-		]
-		}
+		"author": "Darren Liew",
+		"private": 1
 	},
 	{
+		"id": "0651705C-DBB0-482D-9137-61C6EDFCE5FE",
+		"bgcolor": "#fff",
+		"color": "#000",
+		"icon": "se.svg",
 		"name": "Safe Entry",
-		"icon": "saveentry.png",
-		"desc": "Because every scan counts towards our fight against COVID-19"
+		"desc": "Because every scan counts towards our fight against COVID-19",
+		"author": "Darren Liew",
+		"private": 0
 	}
 ]
