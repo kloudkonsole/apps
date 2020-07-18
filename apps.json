@@ -18,5 +18,15 @@
 		"desc": "Because every scan counts towards our fight against COVID-19",
 		"author": "Darren Liew",
 		"private": 0
+	},
+	{
+		"id": "1D819D2F-9569-48A9-96A4-DCA000A3498E",
+		"bgcolor": "#B8E986",
+		"color": "#417505",
+		"icon": "logo.png",
+		"name": "Example",
+		"desc": "A predominant example of an Ivy script",
+		"author": "Darren Liew",
+		"private": 0
 	}
 ]
